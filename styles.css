@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(to right top, #65dfc9    , #6cdbeb)
+  }
+  
+  h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    color:rgb(42, 41, 41)
+  }
+  h2,
+  p {
+    color: #658ec6;
+    font-weight: 200;
+    opacity: 0.8;
+    padding: 1.5rem;
+    text-align: justify;
+  }
+  
+  
+  
+  h3 {
+    color: #426696;
+    font-weight: 300;
+    opacity: 0.8;
+  }
+  
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  header li a:hover {
+    background-color: #65dfc9 ;
+  }
+  
+  #navbar {
+    z-index: 10000;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+  }​ 
+  
+  .hero h1,
+  footer p{
+    text-align:center;
+    padding: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9    , #6cdbeb);
+  }
+  
+  /* On screens that are 992px or less, set the background color to blue */
+  @media screen and (max-width: 992px) {
+    main {
+      background: linear-gradient(to right top, #ad95c8    , #be5ffd);
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    main {
+      background: linear-gradient(to right top, #ece17e    , #dbf113);
+    }
+  }
+  
+  .user img {
+    width: 100px;
+    height: 100px;
+    border-radius: 90%;
+    margin: 10px;
+  }
+  
+  .glass {
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .dashboard {
+    flex: 1;
+    display: flex;
+    min-width:fit-content;
+    border-right: solid;
+    border-color: #6181ac;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  
+  .link {
+    display: flex;
+    margin: 0.5rem 0rem;
+    padding: 0.5rem 0.5rem;
+    align-items: center;
+  }
+  .link h2 {
+    padding: 0rem 0.5rem;
+  }
+  
+  .games {
+    flex: 2;
+  }
+  
+  .pro {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  .pro img {
+    position: absolute;
+    top: -10%;
+    right: 10%;
+  }
+  .pro h2 {
+    width: 40%;
+    color: white;
+    font-weight: 600;
+  }
+  
+  /* Biodata-Right */
+  .biodata {
+    margin-bottom: 3rem;
+  }
+  
+  .biodata h1 {
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    border: none;
+    width: 70%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .projects-flex ul,
+  .profile-button {
+    display: flex;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    list-style-type: none;
+    justify-content: space-evenly
+  }
+  
+  .projects-flex li a:hover {
+    background-color: #65dfc9 ;
+  }
+  
+  .projects-flex li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
