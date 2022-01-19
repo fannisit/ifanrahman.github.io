@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    main {
+      background-color: lavenderblush;
+      margin-top: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-bottom: 2rem;
+    }
+     
+    #top-part {
+      font-family: sans-serif;
+      font-size: 20px;
+    }
+     
+    #title {
+      text-align: center;
+    }
+     
+    #description {
+      text-align: center;
+      font-size: 20px;
+      margin-top: -30px;
+    }
+     
+    #survey-form {
+      text-align: center;
+    }
+     
+    ::placeholder {
+      text-align: center;
+    }
+     
+    input[type="text"],
+    [type="email"],
+    [type="number"] {
+      text-align: center;
+    }
+     
+    #dropdown {
+      text-align: center;
+    }
+     
+    textarea {
+      text-align-last: center;
+    }
+  </style>    
+  <title>Survey Form</title>
+</head>
+<body>
+  <main>
+    <div id="top-part">
+    <h1 id="title"> Survey Form </h1>
+    <p id="description"> This survey form hopes to gather as much info as we can. </p>
+    </div>
+   
+    <form id="survey-form">
+    <div>
+      <p> Survey starts here</p>
+    </div>
+    <div class="formgroup">
+      <label id="name-label" for="name"> Name </label><br>
+      <input id="name" type="text" placeholder="Enter your Name" required>
+      </div><br>
+    <div class="formgroup">
+      <label id="email-label" for="email"> Email </label><br>
+      <input id="email" class="form-control" type="email" placeholder="Enter your Email" required>
+      </div><br>
+    <div class="formgroup">
+      <label id="number-label" for="number"> Age </label><br>
+      <input id="number" class="form-control" type="number" placeholder="Enter your Age" required>
+    </div> <br>
+    <div class="formgroup">
+      <label id="dropdown-label" for="dropdown"> Your Occupation </label><br>
+      <select id="dropdown">
+        <option value="Ustaz"> Ustaz </option>
+        <option value="Ustazah"> Ustazah </option>
+      </select>
+    </div>
+    <div class="formgroup">
+      <p> How many kids do you have? </p>
+      <label>
+        <input name="one" value="1" type="radio" class="input-radio" checked> 1 </label>
+      <label>
+        <input name="two" value="2" type="radio" class="input-radio"> 2 </label>
+    </div>
+    <div class="formgroup">
+      <p> Which gender do you wish to have next? </p>
+      <label>
+        <input name="prefer" value="boy" type="checkbox" class="inputcheckbox" checked> Boy
+      </label>
+      <label>
+        <input name="prefer" value="girl" type="checkbox" class="inputcheckbox"> Girl
+      </label>
+    </div>
+    <div>
+      <p> Any advice you would like to share to soon-to-be-parents? </p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your advice here.."></textarea>
+      </div>
+    <div>
+      <button type="submit" id="submit" class="submit-btn"> Submit </button>
+    </div>
+    </form>
+  </main>
+</body>
+</html>
+
+
+ 
