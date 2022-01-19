@@ -197,7 +197,7 @@
   }
   
   .projects-flex ul,
-  .profile-button {
+  .profile-button ul {
     display: flex;
     margin: 0.5rem;
     padding: 0.5rem;
@@ -205,11 +205,13 @@
     justify-content: space-evenly
   }
   
-  .projects-flex li a:hover {
+  .projects-flex li a:hover,
+  .profile-button li a:hover {
     background-color: #65dfc9 ;
   }
   
-  .projects-flex li a {
+  .projects-flex li a,
+  .profile-button li a {
     display: block;
     color: black;
     text-align: center;
